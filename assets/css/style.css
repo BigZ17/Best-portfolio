@@ -1,0 +1,28 @@
+header {
+    background-color: var(--Light);
+}
+:root {
+    --Light: white;
+    --text: rgb(236, 110, 26);
+    --backgroundcolor: rgb(78, 1, 78);
+}
+
+header {
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+header h1 {
+    border-color: var(--Light);
+    text: var(--text);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+    text-shadow: blue;
+    flex: var(--text);
+}
+
+.About {
+    color: var(--text);
+
+}
