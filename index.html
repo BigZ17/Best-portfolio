@@ -1,86 +1,109 @@
 <!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Webpage</title>
-    </head>
-    <body>
-        <header>
-                <h1><a href="index.html">Zac's Portfolio</a></h1>
-                <div class="service-grid-wrapper">
-                <div class="service-grid-container">
-                <!-- header links to different sections -->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#About">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#Workshop">The Workshop</a>
-                        </li>
-                        <li>
-                            <a href="#Contact">Contact Info</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-        </header>
-            <!-- About me section -->
-            <section id="about" class="About Me">
-                <div class="grid-container">
-                    <h1>About Me </h1>
-                    <p>
-                        I have for so long wanted to get into a technilogical field for quite some time and I kept putting it off. Until recently I decided to live my dream. I come from a family were if there was anything that needed to be done in the technological field I was the first perosn they'd go to for help.
-                    </p>
-                    <p>
-                        Because of my up bringing I am infatuated with all of the advances in technology and what it has to offer. I try to learn as much as I can with computer progamming because one day I want to start my own gaming company to express all the ideas I have to provide the best gaming experience.
-                    </p>
-                </div>
-            </section>
+<html lang="en">
 
-            <!-- My projects -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My First Portfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-            <section class="The Workshop" id="Workshop">
-             <nav>     
-                <h1 class="project-grid-item">The Workshop</h1>
-                <div class="project-grid-container">
-                    <div class="service-grid-container">
-                    <div>
-                        <a href="file:///C:/Users/wacky/Desktop/projects/run-buddy/index.html">
-                            <h3>Run Buddy</h3>
-                    <div>           
-                        <a href="https://bigz17.github.io/Horiseon/">
-                            <h3>Horiseon</h3>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="index.html">
-                            <h3>Three</h3>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-            </section>
-            </div>
-            <!-- How to contact me!! -->
-            <div>
-                <section id="Contact" class="Contact Info">
-                    <div class="flex-row">
-                    <h1 class="Contact">Best route of communication</h1>
-                    </div>
-                    <div>
-                        <h4>480-848-2762<br/>
-                         Website: <a href="https://github.com/BigZ17/Best-portfolio">https://github.com/BigZ17/Best-portfolio</h4>
-                    </div>
-                </section>
-                </div>
-         </header>
+<body>
+  <!-- main logo / nav -->
+  <header>
+    <h1>All About Zac</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact Me</a>
+      <!-- Link this to your resume! -->
+      <a href="#">Resume</a>
+    </nav>
+  </header>
+
+  <!-- hero banner -->
+  <section class="hero-banner">
+    <div>
+      <h2>Coding is awesome!</h2>
+    </div>
+  </section>
+
+  <main class="page-wrapper">
+    <!-- about me -->
+    <section class="page-section" id="about">
+      <h2>About Me</h2>
+      <div>
+        <p>
+          For the longest time i have been into the tech world and all it has to offer for me as well for others.
+          Everywhere we go now a days has some sort of technological side to it and that is wha facinates me.
+          Growing up i always had a knack for fixing all the tech problems in my home. So why not make a career out if it.
+        </p>
+        <p>
+          This course is just one stop closer to my goals in life. I want to eventually create my own gaming company to share 
+          my ideas with the world. So far so good I would say. Other little things about me are most of my careers have been 
+          manual labor jobs which isn't so bad but what a waste it was for my tech centered mind to be wasted.
+        </p>
+      </div>
+    </section>
+
+    <!-- portfolio grid -->
+    <section class="page-section" id="work">
+      <h2>Work</h2>
+      <div class="grid-container">
+
+        <a href="#" class="grid-item surf-report">
+          <div>
+            <h3>Run Buddy</h3>
+            <span>First Class Assignment</span>
+          </div>
+        </a>
         
-        <Footer>
+        <a href="#" class="grid-item led-wall">
+          <div>
+            <h3>Horiseon</h3>
+            <span>Second edit</span>
+          </div>
+        </a>
+        <a href="#" class="grid-item react-calc">
+          <div>
+            <h3>Future</h3>
+            <span>Future</span>
+          </div>
+        </a>
 
-        </Footer>
+        <a href="#" class="grid-item pastel-puzzles">
+          <div>
+            <h3>Pastel Puzzels</h3>
+            <span>MERN Stack</span>
+          </div>
+        </a>
 
-    </body>
+    
+        <a href="#" class="grid-item run-buddy">
+          <div>
+            <h3>Run Buddy</h3>
+            <span>HTML/CSS</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="page-section contact" id="contact">
+      <h2>Contact Me</h2>
+      <div>
+        <address>
+          <a href="tel:+15555555555">555.555.5555</a>
+          <a href="mailto:lernantino@website.com">lernantino@website.com</a>
+          <a href="#">GitHub</a>
+          <a href="#">Twitter</a>
+          <a href="#">Spotify</a>
+        </address>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
