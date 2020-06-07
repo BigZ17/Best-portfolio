@@ -1,28 +1,77 @@
-header {
-    background-color: var(--Light);
-}
 :root {
     --Light: white;
     --text: rgb(236, 110, 26);
-    --backgroundcolor: rgb(78, 1, 78);
+    --backgroundcolor: rgb(107, 17, 107);
 }
-
+.container {
+    grid-template-columns: ;
+}
 header {
-  background-image: url("../images/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
+    height: 175px;
+    background-image: url("../images/Cowboy\ Zac.jpg");
+    background-size: cover;
+    justify-content: right;
+    flex-direction: row;
 }
 header h1 {
-    border-color: var(--Light);
-    text: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
     font-weight: bold;
     font-size: 50px;
     margin: 0;
-    text-shadow: blue;
-    flex: var(--text);
+}
+header h1 a {
+    text-decoration: none;
+    color: var(--text);
+}
+/* links to differnet parts of page */
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;;
+  }
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+}
+/* email link */
+h4 a {
+    text-decoration: none;
+    color: var(--text)
+}
+/* color on section headers */
+.About {
+    display: grid;
+    color: blue;
+}
+.About p {
+    display: grid;
+    color: red;
+}
+.Workshop {
+    color: var(--text) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--backgroundcolor);
+}
+.Workshop h3 {
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Contact {
+    color: orange;
+}
+.Contact h4 {
+    color: purple
 }
 
-.About {
-    color: var(--text);
-
+.service-grid-container {
+    
 }
