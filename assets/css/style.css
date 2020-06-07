@@ -7,7 +7,8 @@
     grid-template-columns: ;
 }
 header {
-    height: 175px;
+    height: 300px;
+    width: 100%;
     background-image: url("../images/Cowboy\ Zac.jpg");
     background-size: cover;
     justify-content: right;
@@ -21,6 +22,7 @@ header h1 {
     font-weight: bold;
     font-size: 50px;
     margin: 0;
+    padding: 0;
 }
 header h1 a {
     text-decoration: none;
@@ -30,8 +32,8 @@ header h1 a {
 header nav ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    list-style: none;;
+    align-items: flex-end;
+    list-style: none;
   }
 
 header nav ul li a {
@@ -46,32 +48,69 @@ h4 a {
 /* color on section headers */
 .About {
     display: grid;
-    color: blue;
+    color: var(--text);
+    border: solid;
+    background-color: var(--backgroundcolor);
 }
 .About p {
     display: grid;
-    color: red;
+    color:var(--text);
 }
-.Workshop {
-    color: var(--text) ;
+
+
+
+.project-grid-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--backgroundcolor);
+    width: 100%;
+    justify-content: flex-end;
 }
-.Workshop h3 {
+.project-grid-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+.grid-container {
+    grid-gap: <grid-row-gap> <grid-column-gap>;
+}
+
+.Workshop {
     color: yellow;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-}
-.Contact {
-    color: orange;
-}
-.Contact h4 {
-    color: purple
+    align-items: center;
+    font-size: 25px;
 }
 
-.service-grid-container {
-    
+.project-grid-item {
+    background-color: var(--backgroundcolor);
+    border: solid;
+    padding: 1em;
+    color: var(--text);
+}
+.Workshop h3 {
+    background-color: var(--backgroundcolor);
+    border: solid;
+    color: var(--text);
+    padding:
+}
+
+.Run-Buddy {
+    width: 200px;
+    height:50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+}
+
+}
+.Contact {
+    color: var(--text);
+    background-color: var(--backgroundcolor);
+}
+.Contact h4 {
+    color: var(--text);
+
 }
