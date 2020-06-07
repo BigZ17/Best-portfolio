@@ -83,34 +83,29 @@ h4 a {
     align-items: center;
     font-size: 25px;
 }
-
+/* Workshop title */
 .project-grid-item {
     background-color: var(--backgroundcolor);
     border: solid;
     padding: 1em;
     color: var(--text);
 }
+/* Projects */
 .Workshop h3 {
     background-color: var(--backgroundcolor);
     border: solid;
     color: var(--text);
     padding:
 }
-
-.Run-Buddy {
-    width: 200px;
-    height:50px;
-    background-color: orange;
-    border: solid;
-    color: black;
+.Run {
+background-color: var(--backgroundcolor);
+border: solid;
+color: var(--text);
+padding:
 }
 
-}
-.Contact {
-    color: var(--text);
-    background-color: var(--backgroundcolor);
-}
 .Contact h4 {
     color: var(--text);
+    padding: 10em;
 
 }
